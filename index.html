@@ -433,72 +433,86 @@
   </main>
   <footer class="footer list">
     <div class="container">
-      <div class="footer-contacts">
-    <a href="" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
-    <address>
-      <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
-      <ul class="footer-address list">
-        <li class="mailto"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </address>
-  </div>
-    <div class="networks">
-    <p class="footer-join title">ПРИЄДНУЙТЕСЬ</p>
-    <ul class="socials list">
-      <li class="socials-item">
-        <a
-          class="socials-link f link"
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="instagram icon"
-        >
-          <svg class="socials-icon network" width="20" height="20">
-            <use href="./images/icons.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a
-          class="socials-link f link"
-          href="https://twitter.com"
-          aria-label="Twitter icon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="socials-icon network" width="20" height="20">
-            <use href="./images/icons.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a
-          class="socials-link f link"
-          href="https://facebook.com"
-          aria-label="Facebook icon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="socials-icon network" width="20" height="20">
-            <use href="./images/icons.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="socials-item">
-        <a
-          class="socials-link f link"
-          href="https://linkedin.com"
-          aria-label="LinkedIn icon"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg class="socials-icon network" width="20" height="20">
-            <use href="./images/icons.svg#icon-linkedin"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+      <div class="inform">
+        <div class="footer-contacts">
+          <a href="" lang="en" class="logo">Web<span class="logo-footer">Studio</span></a>
+          <address>
+            <p class="address">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="footer-address list">
+              <li class="mailto"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li> <a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+          <div class="networks">
+          <p class="footer-join title">ПРИЄДНУЙТЕСЬ</p>
+          <ul class="socials list">
+            <li class="socials-item">
+              <a
+                class="socials-link f link"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="instagram icon"
+              >
+                <svg class="socials-icon network" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link f link"
+                href="https://twitter.com"
+                aria-label="Twitter icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon network" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link f link"
+                href="https://facebook.com"
+                aria-label="Facebook icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon network" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link f link"
+                href="https://linkedin.com"
+                aria-label="LinkedIn icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon network" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  <div class="form newsletters">
+    <p class="footer-join title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
+    <div class="newsletter-wrapper">
+      <input type="email" class="form-input" name="email" id="footer-email" placeholder=" " data-dashlane-rid="29f07d10649a0f79">
+      <label for="footer-email" class="footer-email-label">E-mail</label>
+      <button type="submit" class="button subscribe-button" data-dashlane-rid="24adcf0c97b16130">
+        Підписатися<svg class="subscribe-icon" width="24" height="24">
+          <use href="./images/icons.svg#send"></use>
+        </svg>
+      </button>
+</div>
   </div>
   </div>
   </footer> 
@@ -509,10 +523,10 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <h3>Залиште свої дані, ми вам передзвонимо</h3>
-      <form>
+      <form class="form">
         <!-- <div role="group"></div> -->
         <!-- autofocus autocomplete="off" -->
+        <p class="contact-details-head">Залиште свої дані, ми вам передзвонимо</p>
         <div class="form-field">
         <label for="name">Ім'я</label>
         <input type="text" name="name" id="name" >
@@ -528,9 +542,9 @@
         <input type="email" class="form-input" name="email" id="email">
       </div>
 
-        <div class="form-field">
+        <div class="form-field for-comment">
         <label for="polisy" class="form-label">Коментар</label>
-        <textarea name="polisy" class="form-input" id="polisy"  rows="10"></textarea>
+        <textarea name="polisy" class="form-input" id="polisy"  rows="8"></textarea>
       </div>
 
         <div class="form-field">
@@ -539,7 +553,7 @@
       </div>
 
         <div class="form-field">
-        <button type="submit">Відправити</button>
+        <button type="submit" class="modal-submit button">Відправити</button>
       </div>
       </form>
     </div>
