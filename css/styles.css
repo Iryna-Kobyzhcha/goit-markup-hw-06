@@ -288,13 +288,14 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
 margin-bottom: 12px;
 }
-
+/* оформлення форми модального вікна*/
 .modal .form {
   width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
 .form-field {
+  /* display: block; */
   width: 100%;
   height: 58px;
   position: relative;
@@ -303,6 +304,58 @@ margin-bottom: 12px;
 .form-field.for-comment {
   margin-bottom: 20px;
   height: 138px;
+}
+ .form-label{
+  display: block;
+  /* border: 1px solid tomato; */
+  font-size: 12px;
+  line-height: 1.71;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--title-text-color);
+} 
+.checkbox {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.check {
+  display: flex;
+  align-items: center;
+  /* outline: 1px solid tomato; */
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 1px solid var(--primary-text-color);
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .checkbox-icon {
+  background-color: #2196F3;
+  border-color: #2196F3;
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.contract {
+  text-decoration-line: underline;
+  color: var(--accent-color);
+  margin-left: 7px;
 }
 .modal-submit {
   /* position: absolute; */
