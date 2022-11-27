@@ -294,26 +294,54 @@ margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
 }
-.form-field {
-  /* display: block; */
+.modal-form-group .form-field {
   width: 100%;
   height: 58px;
   position: relative;
   margin-bottom: 10px;
 }
 .form-field.for-comment {
-  margin-bottom: 20px;
-  height: 138px;
+  margin: 0px;
+  height: 162px;
 }
  .form-label{
-  display: block;
-  /* border: 1px solid tomato; */
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   color: var(--title-text-color);
 } 
+.form-input {
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+width: 448px;
+padding-top: 11px;
+padding-right: auto;
+padding-bottom: 11px;
+padding-left: 42px; 
+cursor: pointer;
+}
+.form-input:hover,
+.form-input:focus,
+.form-input:focus-visible{
+  border-color: var(--accent-color);
+}
+
+
+.textarea {
+  resize: none;
+  padding: 12px 16px;
+}
+.icons-of-modal {
+  pointer-events: none;
+  display: inline-block;
+  position: absolute;
+  top: calc(50%);
+  left: 12px;
+  transform: translateY(0, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .checkbox {
   position: absolute;
   white-space: nowrap;
@@ -332,6 +360,8 @@ margin-bottom: 12px;
   /* outline: 1px solid tomato; */
   font-size: 14px;
   letter-spacing: 0.03em;
+  margin-top: 20px; 
+  margin-bottom: 30px;
 }
 .checkbox-icon {
   display: inline-block;
@@ -742,3 +772,43 @@ color: var(--title-text-color);
 .socials .f {
 fill: currentColor;
 } 
+
+.footer-input {
+  width: 358px;
+  /* height: 48px; */
+  background-color: var(--accent-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+padding-top: 15px;
+padding-right: auto;
+padding-bottom: 15px;
+padding-left: 16px;
+ margin-right: 12px;
+}
+
+.subscribe-button {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  min-width: 200px;
+  height: 50px;
+  color: var(--second-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid var(--accent-color);
+}
+.subscribe-icon {
+fill: var(--primary-background-color);
+  margin-left: 10px;
+}
